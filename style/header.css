@@ -1,0 +1,70 @@
+
+.header {
+  padding: 64px 0 40px;
+  border-bottom: 1px solid #dee2e6;
+}
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.28px;
+}
+.subtitle {
+  font-size: 21px;
+  line-height: 36px;
+}
+.input-wrapper {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-inner {
+  display: flex;
+  flex-direction: column;
+}
+.input-inner:first-child {
+  flex-grow: 1;
+}
+.input-inner:last-child {
+  min-width: 216px;
+  margin-left: 20px;
+}
+.input {
+  height: 38px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  background: #fff;
+  padding-left: 16px;
+}
+.input::placeholder {
+  color: #abb5be;
+  size: 16px;
+
+  line-height: 21px;
+}
+label {
+  color: #818182;
+  line-height: 28px;
+}
+
+@media (max-width: 630px) {
+  h1 {
+    font-size: 52px;
+  }
+  .subtitle {
+    font-size: 16px;
+    line-height: 14px;
+  }
+  .input-wrapper {
+    flex-direction: column;
+    margin-top: 28px;
+  }
+  .input-inner {
+    width: 100%;
+  }
+  .input-inner:last-child {
+    margin-left: 0;
+    margin-top: 19px;
+  }
+}

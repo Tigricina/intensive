@@ -1,0 +1,15 @@
+.characters {
+  padding: 40px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 630px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
